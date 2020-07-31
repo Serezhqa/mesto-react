@@ -2,7 +2,6 @@ import React from 'react';
 
 class PopupWithForm extends React.Component {
   render() {
-    console.log('rendered');
     return (
       <div className={this.props.isOpen ? `popup popup_type_${this.props.name} popup_opened` : `popup popup_type_${this.props.name}`}>
         <form className="popup__form" name={this.props.name} noValidate onSubmit={this.props.onSubmit}>
